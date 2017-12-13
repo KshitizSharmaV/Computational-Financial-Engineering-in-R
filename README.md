@@ -11,8 +11,8 @@ Disclamer : I don't suggest you investing with help of this code analysis. The c
 
 Functions this file will help you with
 
-Download Equity data
-Calculate daily and monthly returns
-Find Correlation among stocks
-Find two highest correlated pair of stocks.
-Please twerk variables according to your requirement. Disclaimer : I don't suggest you to use the code for real life analysis. This code is for educational purpose only.
+1. Download Equity data
+2. Calculate daily and monthly returns
+3. Find Correlation among stocks
+4. Find two highest correlated pair of stocks.
+Please twerk variables according to your requirement. Disclaimer : I don't suggest you to use the code for real life  analysis. This code is for educational purpose only.
