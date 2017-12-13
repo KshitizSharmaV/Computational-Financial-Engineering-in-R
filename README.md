@@ -6,3 +6,13 @@ The Black-Litterman asset allocation model, created by Fischer Black and Robert 
 
 Change the parameters to your requirement.
 Disclamer : I don't suggest you investing with help of this code analysis. The code is purely for education purpose and needs refinement before usage in real markets.
+
+# Stock Prices Download and Correlation among stocks.r
+
+Functions this file will help you with
+
+Download Equity data
+Calculate daily and monthly returns
+Find Correlation among stocks
+Find two highest correlated pair of stocks.
+Please twerk variables according to your requirement. Disclaimer : I don't suggest you to use the code for real life analysis. This code is for educational purpose only.
