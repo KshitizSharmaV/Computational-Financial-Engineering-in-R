@@ -1,4 +1,4 @@
-## This is one of the porject where I used a template to design a quick website for his website called Navi Software. 
+## This is one of the pjoect where I used a template to design a quick website for my friend called Navi Software. 
 
 # [Start Bootstrap - Business Frontpage](https://startbootstrap.com/template-overviews/business-frontpage/)
 
