@@ -5,3 +5,6 @@ copy of the questions and solutions in R. I have tried to build the code as much
 best efficient code available, but with time I am refining these code. I urge students to use it a a reference instead of copying 
 the code and use it for understadning. 
 Thanks to professors and all the libraries out there who have helped in building of this project.
+
+## Date 02/26/18
+Trees Added
