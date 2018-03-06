@@ -8,3 +8,12 @@ Thanks to professors and all the libraries out there who have helped in building
 
 ## Date 02/26/18
 Trees Added
+
+## Date 03/05/18
+Different Methods to calculate volatility added
+1) Random Walk
+2) ESA
+3) EWMA
+
+## Date 03/06/18
+Roll Model for calculating Bid Ask Spread added 
