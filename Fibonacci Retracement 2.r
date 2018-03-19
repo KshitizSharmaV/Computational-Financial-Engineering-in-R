@@ -4,22 +4,21 @@
 rm(list=ls())
 library(quantmod)
 
-c=0
+# Downloading equity Data
 ticker <- c("AAPL")
 Market_Data <- new.env()
-
 sDate <- as.Date("2017-02-01")
 a<-getSymbols(ticker, env = Market_Data, from=sDate)
 Combined_Market_Data <- do.call(merge, eapply(Market_Data, Ad))
 Combined_Market_Data <- data.frame(Combined_Market_Data )
 value=as.Date(row.names(Combined_Market_Data))
-plot(Combined_Market_Data$AAPL.Adjusted,type="l",xlab="Dates",ylab="Prices")
 
+prices = Combined_Market_Data$AAPL.Adjusted
 
-
+# Plotting the data
 z=c(0.764,0.618, 0.381, 0.236, 0.50)
 par(mar = c(5, 4, 4, 4) + 0.3)  
-plot(value, Combined_Market_Data$AAPL.Adjusted,type="l",ylab="Prices")
+plot(value, prices,type="l",ylab="Prices",xlab = "")
 par(new = TRUE)
 plot(z, type = "n", axes = FALSE, bty = "n", xlab = "Time", ylab = "",ylim = c(0,1))
 axis(side=4, at = pretty(range(z)))
@@ -29,10 +28,27 @@ abline(h=0.618,col="red")
 abline(h=0.5,col="yellow")
 abline(h=0.381,col="green")
 abline(h=0.236,col="black")
-title("Fibonacci Retracement, 0.764, 0.618, 0.5, 0.381, 0.236")
+title("Fibonacci Retracement")
 
-
-
+df <- data.frame(Date1=character(),Price1=double(),Date2=character(),Price2=double())
+ratios=c()
+t=0
+for(i in 1:(length(prices)-1)){
+  p1=as.double(prices[i])
+  #print(p1)
+  for(j in (i+1):length(prices)){
+    p2=as.double(prices[j])
+    #print(p2)
+    ratio=(p1-p2)/p1
+    ratios[t]=ratio
+    t=t+1
+    if((ratio > 0.61) & (ratio <  0.62)){
+      print(ratio)
+      temp = data.frame(Date1=value[i],Price1=price[i],Date2=value[j],Price2=price[j])
+      df<-rbind(df,temp)
+   }
+  }
+}
 
 # Fibonacci Retracemen
 a=1
