@@ -17,3 +17,12 @@ Different Methods to calculate volatility added
 
 ## Date 03/06/18
 Roll Model for calculating Bid Ask Spread added 
+
+## Date 04/01/18
+Trading Strategies Added
+1) RSI
+2) MACD
+3) Fibonacci Retracement
+4) Head and Shoulder Pattern
+
+
