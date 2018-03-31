@@ -19,12 +19,12 @@ while(i < length(RSI.value)){
   position_entered=0
   temp=1
   if(RSI.value[i]>70){
-    position_entered=sub.aa[i]
+    position_entered=prices[i]
     position_exited=0
     for(j in (i+1):length(RSI.value)){
       if(RSI.value[j]<70){
         print("######")
-        position_exited=sub.aa[j]
+        position_exited=prices[j]
         print(RSI.value[i])
         print(RSI.value[j])
         print("Short Position Entered :")
@@ -54,12 +54,12 @@ while(i < length(RSI.value)){
   position_entered=0
   temp=1
   if(RSI.value[i]<30){
-    position_entered=sub.aa[i]
+    position_entered=prices[i]
     position_exited=0
     for(j in (i+1):length(RSI.value)){
       if(RSI.value[j]>30){
         print("######")
-        position_exited=sub.aa[j]
+        position_exited=prices[j]
         print(RSI.value[i])
         print(RSI.value[j])
         print("Short Position Entered :")
