@@ -25,4 +25,7 @@ Trading Strategies Added
 3) Fibonacci Retracement
 4) Head and Shoulder Pattern
 
-
+## Date 04/12/18
+1) Explixit FDM
+2) Implicit FDM
+3) Crank Nicolson FDM
