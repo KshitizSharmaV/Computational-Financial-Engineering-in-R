@@ -34,7 +34,11 @@ Trading Strategies Added
 1) Asian Options Pricing - Geometric and Arithmetic Pricing 
 2) Principal Component Analysis for Dow Jones Index and Risk Management
 
-## DAte 05/19/18
+## Date 05/19/18
 1) Short term Trading signals 
 • NHMNL - New High Minus New Signal 
-• Above 200 D Moving Average S&P 500 
+• Above 200 D Moving Average S&P 500
+
+## Date 05/19/18
+1) Heston Model
+2) How to calculate Value at risk
